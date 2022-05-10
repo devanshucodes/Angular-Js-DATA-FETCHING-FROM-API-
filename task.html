@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.30/angular-ui-router.js"
+        integrity="sha512-5J08Lq3B2EfuPrNSYckUPHKYHaUhCQ4MdeObdcR0YZnr8eapZ7XMA2ejUyQYpWN+fwO48wuxsL5KDZYIVVVxvg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+    <style>
+        body {
+            background: url(https://ak.picdn.net/shutterstock/videos/24858791/thumb/1.jpg) no-repeat center center/cover;
+            /* content: " "; */
+            /* background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%); */
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 52rem;
+            z-index: -1;
+            opacity: 0.8;
+        }
+
+        #mainimg {
+            float: right;
+            margin: 120px 260px;
+        }
+
+        #name:hover {
+            border: 2px #26d885 solid;
+
+        }
+
+        #heading {
+            color: #0953c0;
+            font-size: 50px;
+            margin-top: 16px;
+        }
+
+        .nav-item:hover {
+            background-color: #04763f;
+        }
+
+        #card1 {
+            margin: 100px 80px;
+            border-radius: 20px;
+        }
+
+        #h3 {
+            /* color: rgb(0, 13, 255); */
+            text-align: center;
+        }
+
+        #mains {
+            width: 300px;
+            height: 600px;
+
+        }
+    </style>
+</head>
+
+<body ng-app="app">
+    <div ui-view>
+
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+                <h5 class="text-white h4">FINASA &reg; </h5>
+                <span class="text-muted"> KEEPS YOUR DATA SAFE </span>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand">FINASA &reg; </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" class="nav" ui-sref="second">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" class="nav" ui-sref="first"> Login </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" class="nav" ui-sref="third"> List of Members </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" class="nav" ui-sref="sixth"> Register </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Dropdown
+                                    </a>
+                                    <ul class="dropdown-menu active" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#accordionExample">About </a></li>
+                                        <li><a class="dropdown-item" href="#">Security</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </nav>
+
+        <img src="https://mlijjxvbttr9.i.optimole.com/dS1wJ-8.1QF3~fe8b/w:auto/h:auto/q:75/http://bluehat.ae/wp-content/uploads/2021/01/image2-home4.png"
+            alt="" width="500px" height="500px" id="mainimg">
+        <div id="mains">
+            <div class="card" style="width: 18rem;" id="card1">
+                <img src="https://media.istockphoto.com/photos/cyber-security-it-engineer-working-on-protecting-network-against-picture-id1322517295?s=612x612"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title" id="h3"> WE KEEPS YOUR PERSONAL DATA SAFE </h3>
+                    <p class="card-text"></p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    <b> IS OUR PLATFORM SAFE ? </b>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body"><b> YES! </b>Our website is very safe to use </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    <b> WHY WE ARE BEST ? </b>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body"> We have best interface and best way of representing your
+                                    ideas and here your data is also safe </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    <b> WHO HAVE ALL RIGHTS OF THIS WEBSITE </b>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">TEAM ERP </div>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+   <script src="revise.js"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- <script src="sweetalert2.all.min.js"></script> -->
+</body>
+
+</html>
